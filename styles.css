@@ -1,0 +1,48 @@
+.grid-layout-example {
+  width: 960px;
+  margin: 0 auto; /* centers the div */
+display: grid;
+    grid-template-columns: 70% 30% ;
+}
+
+header {
+  color: #FFFFFF;
+  background: #63B3ED;
+  text-align: center;
+  padding: 15px; 
+  grid-column: span 2; /* or span 2*/
+
+  h1 {
+    font-size: 36px;
+    font-family: Georgia, serif;
+  }
+  
+}
+
+article {
+  color: #48BB78;
+  grid-column: 1;
+  grid-row: 2;
+  padding: 32px;
+}
+
+article {
+  grid-column: 1;
+  grid-row: 2;
+  padding: 16px;
+}
+
+aside {
+  grid-column: 2;
+  background: #f5d547;
+  padding: 16px;
+}
+
+footer {
+/*   clear: both; */
+  background: #2C5282;
+  color: white;
+  padding: 10px;
+  grid-column: 1 / 3;
+}
+  
